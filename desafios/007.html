@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+    <link rel="shortcut icon" href="/CursoemVídeoHTMLCSS/ex006/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Faça uma Imagem flexível</h1>
+    <p>Quando a janela está bem pequena, mostre uma imagem mais estreita, que não ocupe tanto espaço.</p>
+    <p>Pórem, quando o usuário aumentar a largura do navegador, você pode substituir a imagem menos ampla por uma maior.
+    </p>
+    <picture>
+        <source media="(max-width: 689px)" srcset="img07/foto-p.jpg" type="image/jpg">
+        <source media="(max-width: 1074px)" srcset="img07/foto-m.jpg" type="image/jpg">
+        <img src="img07/foto-g.jpg" alt="Imagem flexível">
+    </picture>
+</body>
+
+</html>
